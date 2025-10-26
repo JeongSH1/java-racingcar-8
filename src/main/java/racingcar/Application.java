@@ -1,10 +1,11 @@
 package racingcar;
 
-import racingcar.data.InputData;
+import racingcar.application.Simulator;
 import racingcar.view.InputView;
+import racingcar.view.OutputView;
 
 public class Application {
     public static void main(String[] args) {
-        InputData inputData = InputView.input();
+        OutputView.print(Simulator.simulate(InputView.input()));
     }
 }

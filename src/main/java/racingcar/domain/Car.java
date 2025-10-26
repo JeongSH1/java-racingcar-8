@@ -21,4 +21,10 @@ public class Car {
     public void setPosition(int position) {
         this.position = position;
     }
+
+    public Car copy() {
+        Car copied = new Car(this.name);
+        copied.position = this.position;
+        return copied;
+    }
 }
