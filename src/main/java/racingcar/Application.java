@@ -1,7 +1,10 @@
 package racingcar;
 
+import racingcar.data.InputData;
+import racingcar.view.InputView;
+
 public class Application {
     public static void main(String[] args) {
-        // TODO: 프로그램 구현
+        InputData inputData = InputView.input();
     }
 }
